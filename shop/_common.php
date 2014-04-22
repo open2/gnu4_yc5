@@ -1,7 +1,7 @@
 <?php
-include_once('../common.php');
+$g4_path = ".."; // common.php 의 상대 경로
+include_once("$g4_path/common.php");
 
-if (!defined('G5_USE_SHOP') || !G5_USE_SHOP)
-    die('<p>쇼핑몰 설치 후 이용해 주십시오.</p>');
-define('_SHOP_', true);
+$g4_path = "."; // shop.config.php 의 상대 경로
+include_once("$yc5_path/shop.config.php");
 ?>

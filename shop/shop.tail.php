@@ -1,8 +1,6 @@
 <?php
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 
-$admin = get_admin("super");
-
 // 사용자 화면 우측과 하단을 담당하는 페이지입니다.
 // 우측, 하단 화면을 꾸미려면 이 파일을 수정합니다.
 ?>
@@ -37,14 +35,8 @@ $admin = get_admin("super");
     </div>
 </div>
 
-<?php
-$sec = get_microtime() - $begin_time;
-$file = $_SERVER['PHP_SELF'];
-?>
-
-<script src="<?php echo G5_JS_URL; ?>/sns.js"></script>
 <!-- } 하단 끝 -->
 
 <?php
-include_once(G5_PATH.'/tail.sub.php');
+include_once("$g4[path]/tail.sub.php");
 ?>
